@@ -11,6 +11,6 @@ trait HasQuickBooksToken
      */
     public function quickBooksToken()
     {
-        return $this->hasOne(Token::class);
+        return $this->hasOne(Token::class, 'company_id', 'company_id');
     }
 }
